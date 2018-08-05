@@ -9,8 +9,20 @@
                 </tr>
              </table>
         </div>
+        <br/>
+        <br/>
+        <ul>
+            <li><a [routerLink]="['home']">Home</a></li>
+            <li><a [routerLink]="['directives']">Directives</a></li>
+            <li [routerLink]="['bindings']">Bindings</li>
+            <li>Services</li>
+            <li>Dependency Injection</li>
+            <li>Routing</li>
+          </ul>
     </div>
-    <div class="col-lg-10 col-sm-11 col-md-11">8 Column</div>
+    <div class="col-lg-10 col-sm-11 col-md-11">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
 
