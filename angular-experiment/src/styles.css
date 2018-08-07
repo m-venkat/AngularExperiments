@@ -27,14 +27,20 @@ html, body, .Container, .LeftNavigation, .Content
 ul {
   padding:5px;
   margin:15px;
+  list-style-type: none;/*No Bullets*/
 
 }
+a{
+  text-decoration: none;
+}
 
-ul > li {
+ li  a {
   display:block;
   padding:5px;
   font-weight: bold;
+  text-decoration: none;
   width:100%;
+  color:black;
   text-align: left;
   border-bottom: 1px solid white;
   transition: all 0.3s linear;
@@ -42,12 +48,26 @@ ul > li {
    -moz-transition: all 0.3s linear;
 }
 
-ul > li:hover, li:active{
+li  a:hover{
   background-color:  darkslategray;
   font-weight:bold;
+  text-decoration: none;
   color:white;
   cursor:-webkit-grab;
-  box-shadow:3px 3px 3px #f1f0f0;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+ li a:active{
+  background-color:  darkslategray;
+  font-weight:bold;
+  text-decoration: none;
+  color:white;
+  cursor:-webkit-grab;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+li a:visited{
+  text-decoration: none;
 }
 .Wrapper
 {
