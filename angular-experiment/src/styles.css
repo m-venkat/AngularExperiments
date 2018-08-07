@@ -1,6 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-  margin:0;
-  padding:0;
+
+html, body, .Container, .LeftNavigation, .Content
+{
+    height: 100%;
 }
 
+.Container:before
+{
+    content: '';
+    height: 100%;
+    float: left;
+}
+
+.HeightTaker
+{
+    position: relative;
+    z-index: 1;
+}
+
+.HeightTaker:after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+ul {
+  padding:5px;
+  margin:15px;
+
+}
+
+ul > li {
+  display:block;
+  padding:5px;
+  font-weight: bold;
+  width:100%;
+  text-align: left;
+  border-bottom: 1px solid white;
+  transition: all 0.3s linear;
+   -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s linear;
+}
+
+ul > li:hover, li:active{
+  background-color:  darkslategray;
+  font-weight:bold;
+  color:white;
+  cursor:-webkit-grab;
+  box-shadow:3px 3px 3px #f1f0f0;
+}
+.Wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.LeftNavigation
+{
+    float: left;
+    background-color: #dcdcdc;
+}
+
+.LeftNavigation, .Content
+{
+    overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: darkgray;
+}

@@ -1,29 +1,31 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-2 col-sm-1 col-md-1" style="background-color:#dcdcdc;height:100vh;padding:0">
-        <div width="100%" style="background-color:darkblue;margin:0;padding:5px;box-shadow: 5px 10px 18px #888888;">
-            <table >
-                <tr>
-                  <td><img src="../assets/img/angLogo.png"  /></td>
-                  <td ><span class="experiment">EXPERIMENTS</span></td>
-                </tr>
-             </table>
+<div class="Container">
+    <div class="HeightTaker">
+        <div class="Wrapper">
+            <div class="LeftNavigation">
+                <div width="100%" style="background-color:darkblue;margin:0;padding:5px;box-shadow: 5px 10px 18px #888888;">
+                    <table >
+                        <tr>
+                          <td><img src="../assets/img/angLogo.png"  /></td>
+                          <td ><span class="experiment">EXPERIMENTS</span></td>
+                        </tr>
+                     </table>
+                </div>
+                <br/>
+                <br/>
+                <ul>
+                    <li [routerLink]="['home']">Home</li>
+                    <li [routerLink]="['directives']">Directives</li>
+                    <li [routerLink]="['bindings']">Bindings</li>
+                    <li>Services</li>
+                    <li>Dependency Injection</li>
+                    <li>Routing</li>
+                </ul>
+            </div>
+            <div class="Content">
+                <router-outlet></router-outlet>
+            </div>
         </div>
-        <br/>
-        <br/>
-        <ul>
-            <li><a [routerLink]="['home']">Home</a></li>
-            <li><a [routerLink]="['directives']">Directives</a></li>
-            <li [routerLink]="['bindings']">Bindings</li>
-            <li>Services</li>
-            <li>Dependency Injection</li>
-            <li>Routing</li>
-          </ul>
     </div>
-    <div class="col-lg-10 col-sm-11 col-md-11">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
 </div>
 
 
