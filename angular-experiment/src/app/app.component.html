@@ -12,13 +12,10 @@
                 </div>
                 <br/>
                 <br/>
-                <ul>
-                    <li><a [routerLink]="['home']">Home</a></li>
-                    <li><a [routerLink]="['directives']" onclick="javascript:alert('hello')">Directives</a></li>
-                    <li><a [routerLink]="['bindings']">Bindings</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Dependency Injection</a></li>
-                    <li><a>Routing</a></li>
+                <ul *ngIf="menus.length > 0">
+                  <li *ngFor="let item of menus">
+                     <a [routerLink]="item.routerLink" (click)="highlightActiveMenu($event)">{{item.menu}}</a>
+                  </li>
                 </ul>
             </div>
             <div class="Content">

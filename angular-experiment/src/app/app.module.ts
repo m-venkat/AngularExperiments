@@ -6,6 +6,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import {HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import {FormsModule } from '@angular/forms';
+import { NotreadyComponent } from './notready/notready.component';
 
 
 
@@ -20,6 +21,7 @@ import {FormsModule } from '@angular/forms';
     BindingsComponent,
     DirectivesComponent,
     HomeComponent,
+    NotreadyComponent,
   ],
   exports: [
     FormsModule
