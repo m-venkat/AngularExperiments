@@ -11,7 +11,15 @@ import $ from 'jquery';
 export class AppComponent {
   title = 'app';
   // let $: any;
-   menus: any = [
+  menus: any = [
+    {
+      menu: 'Long Running Performance Issue',
+      routerLink: 'lonrunningproblem'
+    },
+    {
+      menu: 'Plain Worker',
+      routerLink: 'plainworker'
+    },
     {
       menu: 'Directive',
       routerLink: 'directives'
