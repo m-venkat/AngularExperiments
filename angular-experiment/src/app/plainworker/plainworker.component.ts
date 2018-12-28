@@ -11,14 +11,14 @@ export class PlainworkerComponent implements OnInit {
 
   ngOnInit() {
   }
-  public  LongRunningOperation() :void
-  {
+  public LongRunningOperation(): void {
     this.buttonCaption = "Progressing ....[Wait for 10 seconds]";
     setTimeout(() => {
-      let started = new Date();//Started Date
+      let started = + new Date();//Started Date
+      let current: number;
       do {
-
-      } while ((new Date() - started) <= 10000)
+        current = +new Date();
+      } while (((current - started)) <= 10000)
       this.buttonCaption = "Long Running Operation";
       console.log("Counted for 6 seconds");
     }, 100);
