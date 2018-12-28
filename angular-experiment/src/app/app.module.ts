@@ -8,7 +8,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HomeComponent } from './home/home.component';
 import { NotreadyComponent } from './notready/notready.component';
 import { PlainworkerComponent } from './plainworker/plainworker.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 import { LonrunningproblemComponent } from './lonrunningproblem/lonrunningproblem.component';
 
