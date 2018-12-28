@@ -31,7 +31,7 @@ import { LonrunningproblemComponent } from './lonrunningproblem/lonrunningproble
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 
